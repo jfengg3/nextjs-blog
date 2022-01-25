@@ -1,1 +1,5 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+First rendition of personal blog
+
+## Made with
++ React
++ Next.js
