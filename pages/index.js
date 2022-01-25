@@ -24,7 +24,7 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
 
-      <IconContext.Provider value={{ size: "2em"}}>
+      <IconContext.Provider value={{ size: "2em" }}>
         <div className="icon-wrapper">
           <Link href="https://github.com/jfengg3"><a className="icon"><FaGithub /></a></Link>
           <Link href="https://www.linkedin.com/in/jfengg/"><a className="icon"><FaLinkedin /></a></Link>
@@ -32,7 +32,7 @@ export default function Home({ allPostsData }) {
         </div>
       </IconContext.Provider>
 
-      <section className={utilStyles.headingMd}> 
+      <section className={utilStyles.headingMd}>
         <p>Hi! I am Year 1 Computing Science student from SIT-UoG</p>
         <p>
           I love dabbing on new technologies, am currently interested in full-stack development{' '}
@@ -46,14 +46,14 @@ export default function Home({ allPostsData }) {
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
-            <Link href={`/posts/${id}`}>
-              <a>{title}</a>
-            </Link>
-            <br />
-            <small className={utilStyles.lightText}>
-              <Date dateString={date} />
-            </small>
-          </li>
+              <Link href={`/posts/${id}`}>
+                <a>{title}</a>
+              </Link>
+              <br />
+              <small className={utilStyles.lightText}>
+                <Date dateString={date} />
+              </small>
+            </li>
           ))}
         </ul>
       </section>
